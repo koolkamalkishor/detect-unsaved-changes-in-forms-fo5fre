@@ -1,0 +1,13 @@
+<header id="header">
+  <div class="logo">
+    <h1>Angular - Detect Unsaved Changes in Forms</h1>
+  </div>
+  <ul>
+    <li *ngFor="let item of menuItems" routerLinkActive="active">
+      <a [routerLink]="item.link">{{ item.name }}</a>
+    </li>
+  </ul>
+</header>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

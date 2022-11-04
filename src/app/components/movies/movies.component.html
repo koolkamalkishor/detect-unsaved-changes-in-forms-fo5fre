@@ -1,0 +1,11 @@
+<div class="list-content">
+  <div class="list-item" *ngFor="let movie of movies">
+    <div class="list-image">
+      <img [src]="movie.image" [alt]="movie.name">
+    </div>
+    <div class="list-info">
+      <div class="list-item-title">{{ movie.name }}</div>
+      <div class="list-item-subtitle">{{ movie.year }}</div>
+    </div>
+  </div>
+</div>
